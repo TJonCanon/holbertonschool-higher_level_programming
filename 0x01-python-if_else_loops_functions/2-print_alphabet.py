@@ -1,3 +1,4 @@
 #!/usr/bin/python3
 import string
-print("{}".format(string.ascii_lowercase), end="")
+for i in string.ascii_lowercase:
+    print("{}".format(i), end="")
