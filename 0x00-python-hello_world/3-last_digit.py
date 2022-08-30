@@ -14,3 +14,4 @@ if number > 0 or number == 0:
 if number < 0:
     print(" is -{}".format(last_digit), end="")
     print(" and is less than 6 and not 0")
+    
