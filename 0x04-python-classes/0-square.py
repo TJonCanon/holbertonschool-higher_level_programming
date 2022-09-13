@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-<<<<<<< HEAD
+"Class that makes a square"
 class Square:
+    "Class that makes a square with private size"
     def __init__(self, size):
         self.__size = size
-=======
->>>>>>> 01bf8ac2b43ad3d91e10c8c753b680e74cbe0a0f
