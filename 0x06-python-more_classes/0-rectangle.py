@@ -2,9 +2,6 @@
 """ Rectangle time """
 
 
-from multiprocessing import Value
-
-
 class Rectangle:
     """ class to make a rectange """
     def __init__(self, width=0, height=0):
