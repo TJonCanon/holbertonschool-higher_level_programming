@@ -21,4 +21,3 @@ class Student:
             except Exception:
                 pass
         return new_dict
-    
