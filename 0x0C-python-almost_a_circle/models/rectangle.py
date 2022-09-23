@@ -15,48 +15,38 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """ ph """
         return self.__width
 
     @width.setter
     def width(self, width):
-        """ ph """
         self.__width = width
 
     @property
     def height(self):
-        """ ph """
         return self.__height
 
     @height.setter
     def height(self, height):
-        """ ph """
         self.__height = height
 
     @property
     def x(self):
-        """ ph """
         return self.__x
 
     @x.setter
     def x(self, x):
-        """ ph """
         self.__x = x
 
     @property
     def y(self):
-        """ph """
         return self.__y
 
     @y.setter
     def y(self, y):
-        """ ph """
         self.__y = y
 
     def __str__(self):
-        """ ph """
         return "[Rectangle] {}/{}".format(self.__width, self.__height)
 
     def area(self):
-        """ ph """
         return self.__width * self.__height
