@@ -10,3 +10,12 @@ class Square(Rectangle):
     def __init__(self, size, x=0, y=0, id=None):
         """ place holder """
         super().__init__(size, size, x, y, id)
+
+    @property
+    def size(self):
+        """ defines size of square """
+        return self.width
+
+    @size.setter
+    def size(self, size):
+        self.width = size
