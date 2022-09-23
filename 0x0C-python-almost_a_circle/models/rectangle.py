@@ -64,7 +64,8 @@ class Rectangle(Base):
         self.__y = y
 
     def __str__(self):
-        return "[Rectangle] {}/{}".format(self.__width, self.__height)
+        """ returns id, x, y width, height """
+        return "[{}] ({}) {}/{} - {}/{}".format(type(self).__name__, self.id, self.__x, self.__y, self.__width, self.__height)
 
     def area(self):
         """ place holder """
