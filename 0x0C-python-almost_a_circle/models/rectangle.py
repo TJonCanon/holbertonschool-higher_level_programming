@@ -69,3 +69,8 @@ class Rectangle(Base):
     def area(self):
         """ place holder """
         return self.__width * self.__height
+    def display(self):
+        """ prints out hash shape """
+        print("\n" * self.__y, end="")
+        for i in range(self.__height):
+            print("{}{}".format(" " * self.__x, "#" * self.__width))
