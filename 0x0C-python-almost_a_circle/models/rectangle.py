@@ -84,4 +84,4 @@ class Rectangle(Base):
         if args is not None and len(args) != 0:
             attr = ['id', 'width', 'height', 'x', 'y']
             for number in range(len(args)):
-                setattr(self, attr[args], args[number])
+                setattr(self, attr[number], args[number])
