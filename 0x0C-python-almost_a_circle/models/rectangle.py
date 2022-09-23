@@ -49,4 +49,5 @@ class Rectangle(Base):
         return "[Rectangle] {}/{}".format(self.__width, self.__height)
 
     def area(self):
+        """ place holder """
         return self.__width * self.__height
