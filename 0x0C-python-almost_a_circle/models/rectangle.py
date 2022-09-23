@@ -65,8 +65,9 @@ class Rectangle(Base):
 
     def __str__(self):
         """ returns id, x, y width, height """
-        return "[{}] ({}) {}/{} - {}/{}".format(type(self).__name__, self.id, 
-        self.__x, self.__y, self.__width, self.__height)
+        return (f"[Rectangle] ({self.id}) "
+                f"{self.__x}/{self.__y} - "
+                f"{self.__width}/{self.__height}")
 
     def area(self):
         """ place holder """
@@ -77,3 +78,10 @@ class Rectangle(Base):
         print("\n" * self.__y, end="")
         for i in range(self.__height):
             print("{}{}".format(" " * self.__x, "#" * self.__width))
+
+    def update(self, *args, **kwargs):
+        """ updates rectangle attributes """
+        if args is not None and len(args) != 0:
+            attr = ['id', 'width', 'height', 'x', 'y']
+            for number in range(len(args)):
+                setattr(self, attr[args], args[number])
