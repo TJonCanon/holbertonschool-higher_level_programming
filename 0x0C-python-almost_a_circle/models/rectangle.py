@@ -69,6 +69,3 @@ class Rectangle(Base):
     def area(self):
         """ place holder """
         return self.__width * self.__height
-
-    def display(self):
-        print("#")
