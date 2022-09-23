@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"module for rectangular model"
+""" module for rectangular model """
 from models.base import Base
 
 
@@ -9,8 +9,8 @@ class Rectangle(Base):
  y=0, id=None):
         """ initializing rectangle class """
         super().__init__(id)
-        self.width = width
-        self.height = height
+        self.__width = width
+        self.__height = height
         self.__x = x
         self.__y = y
 
