@@ -85,3 +85,6 @@ class Rectangle(Base):
             attr = ['id', 'width', 'height', 'x', 'y']
             for number in range(len(args)):
                 setattr(self, attr[number], args[number])
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
