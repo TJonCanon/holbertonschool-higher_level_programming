@@ -32,8 +32,9 @@ class Square(Rectangle):
 
     def to_dictionary(self):
         """ returns dictionary rep of square """
-        my_dict = super().to_dictionary()
-        del my_dict['width']
-        del my_dict['height']
-        my_dict['size'] = self.size
-        return my_dict
+        return {
+            "id": self.id,
+            "size": self.width,
+            "x": self.x,
+            "y": self.y
+        }
