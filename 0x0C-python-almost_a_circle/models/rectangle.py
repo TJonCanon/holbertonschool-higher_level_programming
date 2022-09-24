@@ -88,3 +88,11 @@ class Rectangle(Base):
         else:
             for key, value in kwargs.items():
                 setattr(self, key, value)
+
+    def to_dictionary(self):
+            """ returns dictionary rep of a rectangle """
+            my_dict = {}
+            for key, value in vars(self).items():
+                key = key.replace("_Rectangle__", "")
+                my_dict[key] = value
+            return my_dict
