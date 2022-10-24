@@ -12,3 +12,4 @@ if __name__=='_main__':
     )
     for state in cur.fetchall():
         print(state)
+  
