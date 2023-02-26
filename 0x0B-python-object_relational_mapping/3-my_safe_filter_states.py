@@ -21,7 +21,7 @@ def my_safe_filter_states():
     rows = cursor.fetchall()
     for row in rows:
         print(row)
-    cur.close()
+    cursor.close()
     db.close()
 
 
