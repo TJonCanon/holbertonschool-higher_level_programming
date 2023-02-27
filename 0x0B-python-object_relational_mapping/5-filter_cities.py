@@ -9,6 +9,6 @@ if __name__ == '__main__':
                 ORDER BY cities.id ASC", (state_name,))
     rows = cursor.fetchall()
     if rows is not None:
-        print(", ".join(city[0] for city in cities))
+        print(", ".join(city[0] for city in rows))
     cursor.close()
     db.close()
