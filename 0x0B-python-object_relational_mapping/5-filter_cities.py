@@ -8,7 +8,7 @@ if __name__ == '__main__':
                 ON cities.state_id = states.id WHERE states.name=%s \
                 ORDER BY cities.id ASC", (state_name,))
     rows = cursor.fetchall()
-    if cities is not None:
+    if rows is not None:
         print(", ".join(city[0] for city in cities))
     cursor.close()
     db.close()
