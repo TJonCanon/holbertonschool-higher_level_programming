@@ -2,6 +2,8 @@
 """Module contains a script that will list states in a MySQL database"""
 import MySQLdb
 from sys import argv
+
+
 def my_filter_states():
     """Takes in an argument and displays all values inthe states table """
     db = MySQLdb.connect(host='localhost',
@@ -20,5 +22,7 @@ def my_filter_states():
         print(row)
     cur.close()
     db.close()
+
+
 if __name__ == "__main__":
     my_filter_states()
