@@ -12,7 +12,7 @@ if __name__ == '__main__':
             'mysql+mysqldb://{}:{}@localhost:3306/{}'.format(
                 argv[1], argv[2], argv[3]
             )
-        )
+        
     )
     session = Session()
     OperatorPutMeOnThru = State(name="Louisiana")
