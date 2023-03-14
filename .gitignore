@@ -1,3 +1,5 @@
 0x0B-python-object_relational_mapping/test files/0-select_states.sql
 0x0B-python-object_relational_mapping/0-select_states.sql
 0x0B-python-object_relational_mapping/__pycache__/model_state.cpython-38.pyc
+.vscode/settings.json
+.gitignore
